@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto | Karol Rincon</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="./assets/logo.png" id="logo">
+    </header>
+
+    <main class="contenedor">
+
+    <!-- Entrada del texto -->
+    <section class="entradaTexto">
+        
+        <textarea class="textoEntra" id="entrada" placeholder="Ingresa tu texto: "></textarea>
+
+        <div class="condiciones">
+            <p>Solo puedes insertar letras minúsculas sin acentos.</p>
+        </div>
+
+        <div class="botones">
+            <button class="botonEncripta" id="boton_Encripta" onclick="click_encriptar()">Encriptar</button>
+            <button class="botonDesencripta" id="boton_Desencripta" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+    </section>
+    
+    <!-- Salida del texto -->
+    <section class="salidaTexto">
+        <textarea class="textoSale" id="salida" placeholder=""></textarea>
+    </section>
+
+    <!-- Conexión con JavaScript -->
+    <script src="app.js"></script> 
+
+    </main>
+</body>
+
+</html>
